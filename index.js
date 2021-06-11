@@ -1,10 +1,14 @@
 const util = require('util');
 
+function isArray(a) {
+    return (!!a) && (a.constructor === Array);
+};
+
 function tag1(element) {
     return util.format("<%s>", element);
 }
 function tag2(element, child) {
-    return util.format("<%s>%s</%s>", element, child, element);
+    return util.format("<%s>%s</%s>", element, (isArray(child) ? child.join("") : child), element);
 }
 exports.a = function (child) { return tag2("A", child); }
 exports.abbr = function (child) { return tag2("ABBR", child); }
