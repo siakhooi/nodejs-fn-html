@@ -2,15 +2,11 @@ const html = require("../index.js");
 const assert = require('assert');
 const util = require('util');
 
-var dummydata = "asdfjal;ksjf;lkasfaf";
+var dummydata = ["ABC", "hello", "world", 3, 5];
 
-function testtag1(tag, fc) {
-    console.log("Testing: %s", tag);
-    assert.strictEqual(fc(), util.format("<%s>", tag));
-}
 function testtag2(tag, fc) {
     console.log("Testing: %s", tag);
-    assert.strictEqual(fc(dummydata), util.format("<%s>%s</%s>", tag, dummydata, tag));
+    assert.strictEqual(fc(dummydata), util.format("<%s>%s</%s>", tag, dummydata.join(""), tag));
 }
 var array2 = [
     ["A", html.a],
@@ -111,25 +107,6 @@ var array2 = [
     ["VAR", html.var],
     ["VIDEO", html.video]
 ];
-var array1 = [
-    ["AREA", html.area],
-    ["BASE", html.base],
-    ["BR", html.br],
-    ["COL", html.col],
-    ["EMBED", html.embed],
-    ["HR", html.hr],
-    ["IMG", html.img],
-    ["INPUT", html.input],
-    ["LINK", html.link],
-    ["META", html.meta],
-    ["PARAM", html.param],
-    ["SOURCE", html.source],
-    ["TRACK", html.track],
-    ["WBR", html.wbr]
-];
 array2.forEach((v) => {
     testtag2(v[0], v[1]);
-});
-array1.forEach((v) => {
-    testtag1(v[0], v[1]);
 });
