@@ -4,7 +4,7 @@
   "description": "useful html functions",
   "main": "index.js",
   "scripts": {
-    "test": "node test/index.test.js && node test/array.test.js"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/siakhooi/nodejs-fn-html/issues"
   },
-  "homepage": "https://github.com/siakhooi/nodejs-fn-html#readme"
+  "homepage": "https://github.com/siakhooi/nodejs-fn-html#readme",
+  "devDependencies": {
+    "jest": "^27.0.4"
+  }
 }
