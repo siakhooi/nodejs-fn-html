@@ -16,6 +16,11 @@ const html = require("fn-html");
 console.log(html.p("Hello World"));
 ```
 
+## Location
+
+- <https://github.com/siakhooi/nodejs-fn-html.git>
+- <https://www.npmjs.com/package/fn-html>
+
 ## Reference
 
 - <https://www.w3.org/TR/html52/fullindex.html#index-elements>

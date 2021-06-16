@@ -1,14 +1,24 @@
 const html = require("../index.js");
-const assert = require('assert');
-const util = require('util');
 
-var dummydata = ["ABC", "hello", "world", 3, 5];
+exports.CloseTagArray = [
+    ["AREA", html.area],
+    ["BASE", html.base],
+    ["BR", html.br],
+    ["COL", html.col],
+    ["EMBED", html.embed],
+    ["HR", html.hr],
+    ["IMG", html.img],
+    ["INPUT", html.input],
+    ["LINK", html.link],
+    ["META", html.meta],
+    ["PARAM", html.param],
+    ["SOURCE", html.source],
+    ["TRACK", html.track],
+    ["WBR", html.wbr]
+];
 
-function testtag2(tag, fc) {
-    console.log("Testing: %s", tag);
-    assert.strictEqual(fc(dummydata), util.format("<%s>%s</%s>", tag, dummydata.join(""), tag));
-}
-var array2 = [
+
+exports.OpenTagArray = [
     ["A", html.a],
     ["ABBR", html.abbr],
     ["ADDRESS", html.address],
@@ -107,6 +117,3 @@ var array2 = [
     ["VAR", html.var],
     ["VIDEO", html.video]
 ];
-array2.forEach((v) => {
-    testtag2(v[0], v[1]);
-});
