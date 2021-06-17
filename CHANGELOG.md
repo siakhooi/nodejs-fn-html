@@ -1,8 +1,9 @@
 # Change Log
 
-## Upcoming
+## `0.3.0`
 
 - `#4`: As dev, I want to use jestjs for test.
+- `#10`: As web dev, I want to choose element in uppercase or lowercase. add `useUpperCase()`, `useLowerCase()`
 
 ## `0.2.0`
 

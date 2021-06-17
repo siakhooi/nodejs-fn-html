@@ -13,6 +13,9 @@ npm install fn-html
 ```js
 const html = require("fn-html");
 
+//html.useUpperCase(); //default
+//html.useLowerCase();
+
 console.log(html.p("Hello World"));
 ```
 
