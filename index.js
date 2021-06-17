@@ -3,13 +3,22 @@ const util = require('util');
 function isArray(a) {
     return (!!a) && (a.constructor === Array);
 };
-
 function tag1(element) {
-    return util.format("<%s>", element);
+    ele = options.upperCase ? element : element.toLowerCase();
+    return util.format("<%s>", ele);
 }
 function tag2(element, child) {
-    return util.format("<%s>%s</%s>", element, (isArray(child) ? child.join("") : child), element);
+    ele = options.upperCase ? element : element.toLowerCase();
+    return util.format("<%s>%s</%s>", ele, (isArray(child) ? child.join("") : child), ele);
 }
+
+var options = {
+    upperCase: true
+};
+
+exports.useUpperCase = function () { options.upperCase = true; }
+exports.useLowerCase = function () { options.upperCase = false; }
+
 exports.a = function (child) { return tag2("A", child); }
 exports.abbr = function (child) { return tag2("ABBR", child); }
 exports.address = function (child) { return tag2("ADDRESS", child); }

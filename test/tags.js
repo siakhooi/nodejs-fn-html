@@ -1,5 +1,7 @@
 const html = require("../index.js");
 
+exports.html = html;
+
 exports.CloseTagArray = [
     ["AREA", html.area],
     ["BASE", html.base],
