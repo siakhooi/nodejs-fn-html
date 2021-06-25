@@ -1,5 +1,9 @@
 # Change Log
 
+## `0.3.1`
+
+- `#18`: bug: As dev/test, I want to not include github files in npm package.
+
 ## `0.3.0`
 
 - `#4`: As dev, I want to use jestjs for test.
