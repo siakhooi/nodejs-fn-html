@@ -1,5 +1,9 @@
 # Change Log
 
+## Unreleased
+
+- `#20`: As dev, I want to have build/test/deploy status badge on `README.md`
+
 ## `0.3.1`
 
 - `#18`: bug: As dev/test, I want to not include github files in npm package.
