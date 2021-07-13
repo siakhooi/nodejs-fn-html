@@ -6,9 +6,10 @@
 
 ![GitHub issues](https://img.shields.io/github/issues/siakhooi/nodejs-fn-html)
 ![GitHub closed issues](https://img.shields.io/github/issues-closed/siakhooi/nodejs-fn-html)
-![test](https://github.com/siakhooi/nodejs-fn-html/actions/workflows/build.yml/badge.svg)
+![GitHub top language](https://img.shields.io/github/languages/top/siakhooi/nodejs-fn-html)
 ![GitHub repo size](https://img.shields.io/github/repo-size/siakhooi/nodejs-fn-html)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/siakhooi/nodejs-fn-html)<BR>
+![test](https://github.com/siakhooi/nodejs-fn-html/actions/workflows/build.yml/badge.svg)<BR>
 ![deploy gpr](https://github.com/siakhooi/nodejs-fn-html/actions/workflows/publish-gpr.yml/badge.svg)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/siakhooi/nodejs-fn-html)
 ![GitHub all releases](https://img.shields.io/github/downloads/siakhooi/nodejs-fn-html/total?color=33cb56)
