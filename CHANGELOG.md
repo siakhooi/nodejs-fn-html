@@ -3,6 +3,7 @@
 ## Unreleased
 
 - `#20`: As dev, I want to have build/test/deploy status badge on `README.md`
+- `#24`: As Dev, I want to add github top language badge to `README.md`.
 
 ## `0.3.1`
 
