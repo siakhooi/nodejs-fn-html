@@ -56,3 +56,4 @@ console.log(html.p("Hello World"));
 ## Reference
 
 - <https://www.w3.org/TR/html52/fullindex.html#index-elements>
+- <https://github.com/standard/standard>
