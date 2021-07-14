@@ -1,10 +1,10 @@
-const util = require('util');
-const tags = require('./tags.js');
+const util = require('util')
+const tags = require('./tags.js')
 
-tags.html.useLowerCase();
+tags.html.useLowerCase()
 
-test.each(tags.CloseTagArray)("test close tag in lowercase", (tag, fc) => {
-    var t = tag.toLowerCase();
-    expect(fc())
-        .toBe(util.format("<%s>", t));
-});
+test.each(tags.CloseTagArray)('test close tag in lowercase', (tag, fc) => {
+  const t = tag.toLowerCase()
+  expect(fc())
+    .toBe(util.format('<%s>', t))
+})
